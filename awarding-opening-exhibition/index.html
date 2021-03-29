@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      // true for mobile device
+      window.location.href = 'instagram://user?username=sidlefest';
+    } else {
+      // false for not mobile device
+      window.location.href = 'https://instagram.com/sidlefest';
+    }
+  </script>
+</body>
+
+</html>
