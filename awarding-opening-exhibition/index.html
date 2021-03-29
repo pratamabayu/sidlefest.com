@@ -5,6 +5,7 @@
 </head>
 
 <body onload="loadUrl()">
+  <a id="ig-link" href="instagram://user?username=sidlefest">Click Me</a>
   <script>
     function loadUrl() {
       if (navigator.userAgent.match(/Android/i)
@@ -15,11 +16,7 @@
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)) {
         // true for mobile device
-        var el = document.createElement('a');
-        el.innerHTML = 'click me';
-        document.body.appendChild(el);
-
-        el.href = 'instagram://user?username=sidlefest';
+        var el = document.getElementById('ig-link');
         el.click();
       } else {
         // false for not mobile device
